@@ -4,6 +4,10 @@ Es todo se realizo con React + Boostrap para los estilos. Un simple todo pero in
 
 Este todo te pide ingresar un tarea en caso de enviar el campo vacio no sucede nada, sino aparecera en nuestra pantalla una tarea que contiene un checkbox para ir tildando la tarea completa o no, si la tarea se la marca completa aparecera como tachada y aparecera un button para eliminarlo. Al refrescar la pantalla la informacion permanecera disponible ya que se usa el localStorage. 
 
+
+https://user-images.githubusercontent.com/80013958/150655998-13367161-feef-44b6-980e-7d7525f07d60.mp4
+
+
 # Construido con 🛠️
 * React.js
 * Boostrap
@@ -33,7 +37,9 @@ Aplique el useRedecer en este proyecto ya que nos permite utilizar el localStora
 
 ## Prop-Types
 Esta libreria la uso para validar que a los componentes se les pase correctamente los props que requieren para su funcionamientos.  
+
 # Deploy 👨‍💻
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6371f9c9-268c-4405-997d-3629b55434a6/deploy-status)](https://todocontrol.netlify.app/)
 
 # Contacto 📫
 - [Linkedin](https://www.linkedin.com/in/leanquiroga95/)
