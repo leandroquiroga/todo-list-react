@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --black: #202020;
+    --gray: #eeeeee;
+    --red: #e10c0c;
+    --font: 'Poppins', sans-serif;
+}
+.App-card{
+    width: 80%;
+}
+.App-button{
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+.App-button:focus{
+    box-shadow: none;
+}
+.App-title{
+    font: 400 1.5rem var(--font);
+    width: 50%;
+}
+.App-input{
+    width: 80%;
+    outline: none;
+    font: 400 1rem var(--font);
+}
+.App-TodoList{
+    background-color: var(--gray);
+}
+.App-text--noTask{
+    font: 400 1rem var(--font);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App-todo--complete{
+    text-decoration: line-through;
+    font-weight: 600;
+    font-style: italic;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App-button--delete{
+    border: none;
+    outline: none;
+    background-color: transparent;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Styles of Boostrap */
+.form-check-input:checked{
+    background-color: var(--black);
+    border-color: var(--red);
+}
+.form-check-input:focus{
+    border-color: var(--black);
+    outline: 0;
+    box-shadow:none;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Media Query --> Responsive */
+@media only screen and (max-width: 993px) {
+    .App-card{
+        width: 90%;
+    }
+    .form-control{
+        display: flex!important;
+        flex-direction: column!important;
+        justify-content: center!important;
+    }
+    .App-input{
+        width: 100%;
+        margin: 5px 0;
+    }
+    .App-button{
+        width: 100%;
+    }
 }
