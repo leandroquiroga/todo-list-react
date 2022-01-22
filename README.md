@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+# Todo List (React + Custom Hooks + useContext + useReducer + localStorage) 📝
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Es todo se realizo con React + Boostrap para los estilos. Un simple todo pero integrando hooks clasicos de React.js y los custom hooks. 
 
-## Available Scripts
+Este todo te pide ingresar un tarea en caso de enviar el campo vacio no sucede nada, sino aparecera en nuestra pantalla una tarea que contiene un checkbox para ir tildando la tarea completa o no, si la tarea se la marca completa aparecera como tachada y aparecera un button para eliminarlo. Al refrescar la pantalla la informacion permanecera disponible ya que se usa el localStorage. 
 
-In the project directory, you can run:
+# Construido con 🛠️
+* React.js
+* Boostrap
+* Custom Hooks
+* useContext
+* useReducer 
+* Prop-types
 
-### `npm start`
+# Funcionalidades ⚙️
+## Validacion del formulario
+Es requerido colocar una tarea en nuestro formulario ya que en caso no se coloque nada no vamos ninguna iteraccion con nuestra aplicacion. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Crea y eliminar un Todo
+Si creamos una tarea esta se aloja en nuestro localStorage para llevar un contro de nuestras tareas. Al tildar como completada nuestra tarea la tarea aparecera como tachada ya que le indicamos que esta completada y queda disponible para eliminarla de nuestra aplicacion. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Contador de tareas 
+Cada vez que creamos una nueva tarea aparecera en nuestro header un contador que se actualiza por cada todo creado o eliminado. 
 
-### `npm test`
+## Custom Hooks
+Se ha creado un custom hooks para el formulario este custom hooks no permite escribir, ingresar nuevos todo y tiene un funcion que nos permite resetear nuestro formulario. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## useContext 
+He decidido utilizar este hooks para poder como variables globales de nuestro objeto que contiene toda la informacion necesaria y nuestro funcion del useReducer.
 
-### `npm run build`
+## useReducer 
+Aplique el useRedecer en este proyecto ya que nos permite utilizar el localStorage de una manera simplificada, tambien podemos ir manipulando los requerimientos del usuario si quiere agregar, editar su estado o asi mismo eliminarla. 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Prop-Types
+Esta libreria la uso para validar que a los componentes se les pase correctamente los props que requieren para su funcionamientos.  
+# Deploy 👨‍💻
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Contacto 📫
+- [Linkedin](https://www.linkedin.com/in/leanquiroga95/)
+- [Email](mailto:leandroquiroga9514@gmail.com)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Autor 👤
+Realizado con ❤️ por [Leandro Quiroga](https://github.com/leandroquiroga);
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
